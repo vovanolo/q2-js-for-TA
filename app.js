@@ -361,3 +361,102 @@ const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 // let array = "i love js".split(" ");
 
 // console.log(array.join("*"));
+
+// new Set
+// console.log(typeof NaN);
+// console.log(isNaN("sfsfs"));
+// if(isNaN("sfsfs")){
+//     console.log("wrong value");
+// } else {
+
+// }
+
+// let a = null;
+// let b = 20;
+// let c = a + b;
+
+// console.log(c);
+
+// for(let i = 0; i < 10; i++) {
+//     console.log(i);
+// }
+
+// console.log();
+// printMe();
+
+// try{
+//     printMe();
+//     console.log("hello from try section");
+// }catch(exception){
+//     // console.log("hello from catch section");
+//     // console.log(exception.name);
+//     // console.log(exception.message);
+//     // console.log(exception.stack);
+// }
+
+// new RangeError("Out of range ");
+// new TypeError("Wrong data type")
+
+// throw new RangeError("Out of range ");
+// new Error('some error');
+
+
+
+// function checkNumber(){
+//     try{
+//         let number = prompt("Enter a number");
+//         if(number > 20){
+//             throw new RangeError("Number is bigger than 20");
+//         }else{
+//             console.log(number);
+//         }
+//     }catch(exception){
+//         console.log(exception.message);
+//     }
+// }
+
+// checkNumber();
+
+// function checkNumber(){
+//         let number = prompt("Enter a number");
+//         if(number > 20){
+//             throw new RangeError("Number is bigger than 20");
+//         }else{
+//             console.log(number);
+//         }
+// }
+
+// try{
+//     checkNumber();
+// }catch(exception){
+//     console.log(exception.message);
+// }
+
+// checkNumber();
+
+// class AgeError{
+//     constructor(message){
+//         this.name = "AgeError";
+//         this.message = message;
+//     }
+// }
+
+// try{
+//     let age = 20
+//     if(age > 19){
+//         throw new AgeError("Age is bigger than 19");
+//     }
+// }catch(exception){
+//     console.log(exception.message);
+// }
+
+// try{
+//     let age = 20
+//     if(age > 19){
+//         throw "Age is bigger than 19";
+//     }
+// }catch(exception){
+//     console.log(exception);
+// }
+
+// forEach map reduce find filter
