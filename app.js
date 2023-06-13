@@ -255,7 +255,7 @@
 //     console.log(i);
 // }
 
-const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+// const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 
 // console.log(numbers[0]);
 
@@ -459,4 +459,97 @@ const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 //     console.log(exception);
 // }
 
-// forEach map reduce find filter
+// forEach map reduce find filtesr
+
+// function getLastElements(arr, n) {
+//     if (n <= 0) {
+//       return [];
+  
+//     } else if (n >= arr.length) {
+//       return arr[arr.length - 1];
+//     } else {
+//       return arr.slice(-n);
+//     }
+//   }
+  
+//   console.log(getLastElements([1, 2, 3, 4, 5], 2));
+
+// const numbers = [1,2,3,4,5,6];
+
+
+// const newNumber = numbers.map(function(element){
+//     // console.log(element);
+//     // if(element === 5){
+//     //     // continue
+//     //     return;
+//     // }
+//     // console.log(element);
+//     return element + 1;
+// })
+// console.log(newNumber);
+
+// function toTitleCase(str) {
+//     const titleCase = str
+//       .split(' ')
+//       .map(word => {
+//         return word.charAt(0).toUpperCase() + word.slice(1);
+//       })
+//       .join(' ');
+  
+//     return titleCase;
+//   }
+
+// const user = {
+//     name: "user1",
+//     age: 2,
+//     surname: "userSurname",
+//     wife: {
+//         name: "wife1",
+//         age: 25
+//     },
+//     favouriteBooks: ["Don kihot", "dorian gray"],
+//     showName: function(){
+//         console.log(this.name);
+//     }
+
+// }
+
+// console.log(user.name);
+// console.log(user["name"]);
+
+// user.name = "newName";
+// user.city = "Lviv";
+
+// // delete user.age;
+
+// console.log(user.wife.name);
+// user.showName();
+// const obj = {}
+
+// const obj1 = new Object();
+
+// class
+
+class Student{
+    constructor(name, surname){
+        this.name = name;
+        this.surname = surname;
+    }
+   static someVariable = 23;
+
+    showName(){
+        console.log(this.name);
+    }
+}
+
+const student1 = new Student("Ivan", "Ivanenko");
+
+console.log(student1.name);
+student1.name = "newIvan";
+// const student2 = new Student("Ivan", "Ivanenko");
+// const student3 = new Student("Ivan", "Ivanenko");
+
+
+
+// // console.log(student1);
+// student1.showName();
