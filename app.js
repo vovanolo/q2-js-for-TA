@@ -530,22 +530,22 @@
 
 // class
 
-class Student{
-    constructor(name, surname){
-        this.name = name;
-        this.surname = surname;
-    }
-   static someVariable = 23;
+// class Student{
+//     constructor(name, surname){
+//         this.name = name;
+//         this.surname = surname;
+//     }
+//    static someVariable = 23;
 
-    showName(){
-        console.log(this.name);
-    }
-}
+//     showName(){
+//         console.log(this.name);
+//     }
+// }
 
-const student1 = new Student("Ivan", "Ivanenko");
+// const student1 = new Student("Ivan", "Ivanenko");
 
-console.log(student1.name);
-student1.name = "newIvan";
+// console.log(student1.name);
+// student1.name = "newIvan";
 // const student2 = new Student("Ivan", "Ivanenko");
 // const student3 = new Student("Ivan", "Ivanenko");
 
@@ -553,3 +553,112 @@ student1.name = "newIvan";
 
 // // console.log(student1);
 // student1.showName();
+
+// let title = document.querySelector(".title"); 
+// let title = document.querySelectorAll(".title")[1]; 
+
+
+// console.log(title);
+// console.log(document.body.childNodes);
+// console.log(document.body.children);
+// console.log(document.body.firstChild);l
+
+// console.log(document.body.firstElementChild.nextElementSibling.nextElementSibling);
+
+
+// let block = document.querySelector(".block");
+
+// console.log(block.innerHTML);
+// block.innerHTML = "<h2> new tag</h2>";
+// console.log(block.outerHTML);
+// block.outerHTML = "<h1> new tag</h1>";
+// console.log(block.tagName);
+
+// block.className = "newBlock";
+// block.id = "blockId";
+// setAtrribute
+// block.setAttribute("id", "blockId");
+
+// let newElement = document.createElement("h1");
+
+// newElement.innerHTML = "title from JS";
+
+// newElement.className = "title";
+// newElement.classList.add("title");
+
+// console.log(newElement);
+// block.append(newElement);
+// block.prepend(newElement);
+
+// console.log(block.hasAttribute("class"));
+// block.remove();
+
+
+// let title = document.querySelector(".title");
+
+// title.style.color = "green";
+// title.style.backgroundColor = "rgba(123,45,66, 0.5)";
+
+// reduce
+
+// const numbers = [1,2,3,4,6,7,8,9,10,11,12,13,14];
+
+// let sum = 0;
+
+// for(let i = 0; i< numbers.length; i++){
+//     sum += numbers[i];
+// }
+
+
+// console.log(sum);
+
+// let result = numbers.reduce(function(sum, element){
+//     return sum + element;
+// },0)
+
+// console.log(result);
+// console.log(window);
+
+// let newWindow = window.open("https://www.google.com", "", "height=300, width=300, left=200,top=200");
+
+// newWindow.moveTo(400,400);
+// newWindow.resizeTo(500,500);
+// setTimeout(function(){
+    // newWindow.close();
+    // console.log("hello");
+// },5000);
+
+// console.log(window.innerWidth);
+// document.querySelector('.title').onclick = function(){
+//     console.log("click working from js");
+// }
+
+// eventListener
+
+// let title = document.querySelector('.title');
+
+// function someFunction(){
+//     console.log("some message");
+// }
+
+// title.addEventListener("click", function(){
+//     console.log("my event working with event listener");
+// })
+// title.addEventListener("click", someFunction);
+const btn = document.querySelector('.btn');
+// let title = document.querySelector('.title');
+let inp = document.querySelector('.inp');
+
+// btn.addEventListener("click", function(event){
+//     // console.log("it works");
+//     // console.log(event.type);
+//     // console.log(event.target);
+//     event.target.style.color = "green";
+// })
+// btn.addEventListener("click", function(event){
+//     title.style.color = "red";
+// })
+btn.addEventListener("click", function(event){
+    console.log(inp.value);
+    inp.value = "";
+})
