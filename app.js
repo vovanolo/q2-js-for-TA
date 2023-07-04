@@ -645,9 +645,9 @@
 //     console.log("my event working with event listener");
 // })
 // title.addEventListener("click", someFunction);
-const btn = document.querySelector('.btn');
+// const btn = document.querySelector('.btn');
 // let title = document.querySelector('.title');
-let inp = document.querySelector('.inp');
+// let inp = document.querySelector('.inp');
 
 // btn.addEventListener("click", function(event){
 //     // console.log("it works");
@@ -658,7 +658,127 @@ let inp = document.querySelector('.inp');
 // btn.addEventListener("click", function(event){
 //     title.style.color = "red";
 // })
-btn.addEventListener("click", function(event){
-    console.log(inp.value);
-    inp.value = "";
-})
+// btn.addEventListener("click", function(event){
+//     console.log(inp.value);
+//     inp.value = "";
+// })
+
+// const sayHello = function(){
+//     console.log("hello");
+// }
+
+// sayHello();
+
+// const sayHello = () => {
+//     console.log("hello");
+// }
+
+// sayHello();
+
+// const sum = function(a,b){
+//     return a + b;
+// }
+
+// const sum = (a,b) => a + b;
+
+
+// console.log(sum(2,2));
+
+// const numbers = [1,2,3,4,5,6,7,8,9,10];
+
+// numbers.map(element =>{
+//     console.log(element);
+// })
+
+// Math.min(...numbers);
+// console.log("1");
+
+// setTimeout(()=>{
+//     console.log("2");
+// });
+
+// console.log("3");
+
+// function sayHello(){
+//     return "hello from function";
+// }
+
+
+// console.log(sayHello());
+
+// function sayHello(){
+//     return new Promise((resolve, reject) => {
+//         resolve("hello from function");
+//     })
+// }
+
+// console.log(sayHello());
+// sayHello().then((result) => console.log(result));
+
+// function sum(a,b){
+//     return new Promise((resolve,reject) => {
+//         if(a > 0 && b > 0){
+//             resolve(a + b);
+//         }else{
+//             reject("a and b must be greater than 0");
+//         }
+//      })
+// }
+
+// async function myFunction(){
+//     let result  = await sum(2,2);
+//     // console.log(result);
+//     return result;
+// }
+
+// myFunction().then(result => console.log(result));
+
+// sum(-2,-2).then(result => console.log(result))
+//         .catch(error => console.log(error));
+
+// sum(-2,-2).then(result => {
+//                     console.log(result)
+//                 },
+//                 error =>{
+//                     console.log(error);
+//                 }
+// )
+
+
+// sum(-2,-2).then(result => result + 10)
+//         .then(result => result + 10)
+//         .then(result => console.log(result))
+//         .catch(error =>{
+//             console.log(error);
+//             return sum(3,3);
+//         })
+//         .then(result => console.log(result));
+
+
+// console.log("hello hello");
+
+// const fs = require('fs');
+
+// fs.readFile("text.txt", "utf-8", function(err,data){
+//     console.log(data);
+// });
+
+// const {array} = require("./mymodule.js");
+
+// console.log(array);
+
+const http = require('http');
+
+const one = 1;
+
+http.createServer(function(request, response){
+    response.writeHead(200, {"Content-Type": "text/html"});
+    response.write(`
+        <h1>hello ${one}</h1>
+        <h1>hello 2</h1>
+        <h1>hello 3</h1>
+    `);
+    response.end();
+}).listen(8000);
+
+console.log("server is running at http://localhost:8000");
