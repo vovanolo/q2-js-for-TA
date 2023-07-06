@@ -767,18 +767,40 @@
 
 // console.log(array);
 
-const http = require('http');
+// const http = require('http');
 
-const one = 1;
+// const one = 1;
 
-http.createServer(function(request, response){
-    response.writeHead(200, {"Content-Type": "text/html"});
-    response.write(`
-        <h1>hello ${one}</h1>
-        <h1>hello 2</h1>
-        <h1>hello 3</h1>
-    `);
-    response.end();
-}).listen(8000);
+// http.createServer(function(request, response){
+//     response.writeHead(200, {"Content-Type": "text/html"});
+//     response.write(`
+//         <h1>hello ${one}</h1>
+//         <h1>hello 2</h1>
+//         <h1>hello 3</h1>
+//     `);
+//     response.end();
+// }).listen(8000);
 
-console.log("server is running at http://localhost:8000");
+// console.log("server is running at http://localhost:8000");
+
+// fetch("https://jsonplaceholder.typicode.com/posts")
+//     .then((response) => response.json())
+//     .then((data) => data.map((post) => console.log(post.title)));
+
+
+// async function getData(){
+//     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     const data = await response.json();
+//     // console.log(data);
+//     data.map((post) => {
+//         if(post.userId === 4){
+//             console.log(post.title);
+//         }
+//     });
+
+// }
+
+// getData();
+
+// fetch("./users.json").then((response) => response.json())
+//                     .then((data) => console.log(data));
