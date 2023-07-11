@@ -804,3 +804,15 @@
 
 // fetch("./users.json").then((response) => response.json())
 //                     .then((data) => console.log(data));
+// console.log("1002".match(/\d{3}/g));
+// console.log("sfsgfdg gfg 223232.35242446464".match(/\d{1,}\.\d+/g));
+
+function upperCase(str){
+    if(/^[A-Z]/.test(str)){
+        console.log("hooray uppercase is here");
+    }else{
+        console.log("no uppercase here");
+    }
+}
+
+upperCase("Fasfdfgd");
